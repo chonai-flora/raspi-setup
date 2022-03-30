@@ -1,0 +1,12 @@
+## ~/.asoundrc  
+
+defaults.bluealsa.interface "hci0"  
+defaults.bluealsa.device "E8:07:BF:XX:XX:XX"  
+defaults.bluealsa.profile "a2dp"  
+defaults.bluealsa.delay 10000  
+  
+pcm.bt-receiver {  
+  type bluealsa  
+  device "E8:07:BF:XX:XX:XX" // device address  
+  profile "a2dp"  
+}  
